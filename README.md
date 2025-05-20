@@ -105,6 +105,23 @@ By the end of this project, we aim to:
 - Git + GitHub
 
 ---
+## 📓 Notebook links
+
+
+- 📓 [Exploratory Data Analysis Notebook](https://colab.research.google.com/drive/12_r25CkAcZLfnu8N0DvDLoy8YQ7XPwXp?usp=sharing)
+- 🤖 [Model Training Notebook](link-to-notebook)
+
+---
+
+## 💼 Real-world Impact
+
+This type of analysis can be applied in schools and universities to:
+
+- Detect at-risk students early
+- Allocate support resources more effectively
+- Improve academic performance through behavior-based interventions
+
+---
 
 ## 🙋 Author
 
