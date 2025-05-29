@@ -108,7 +108,7 @@ By the end of this project, we aim to:
 ## 📓 Notebook links
 
 
-- 📓 [Exploratory Data Analysis Notebook](https://colab.research.google.com/drive/12_r25CkAcZLfnu8N0DvDLoy8YQ7XPwXp?usp=sharing)
+- 📓 [Exploratory Data Analysis Notebook](https://colab.research.google.com/drive/12_r25CkAcZLfnu8N0DvDLoy8YQ7XPwXp?usp=drive_link)
 - 🤖 [Model Training Notebook](https://drive.google.com/file/d/1SQUiXk6FLTwP9OjejNruoLQZBy-zTtS3/view?usp=sharing)
 
 ---
