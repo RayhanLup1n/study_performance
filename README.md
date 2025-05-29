@@ -1,6 +1,6 @@
 # 🎓 Student Academic Behavior & Performance Analysis
 
-> **Project Type**: Data Cleaning + Exploratory Data Analysis (EDA) + Predictive Modeling  
+> **Project Type**: Data Cleaning • Exploratory Data Analysis (EDA) • Predictive Modeling  
 > **Dataset Size**: 80,000 synthetic student records  
 > **Focus**: Identifying behavioral and lifestyle factors that influence GPA and exam performance.
 
@@ -8,8 +8,7 @@
 
 ## 📦 Dataset Overview
 
-This project utilizes a **synthetic dataset** simulating academic and lifestyle behaviors of 80,000 students.  
-It captures multiple factors such as:
+This project utilizes a **synthetic dataset** simulating academic and lifestyle behaviors of 80,000 students, capturing factors such as:
 
 - 🎯 **Academic Behavior**: study hours, attendance, GPA, exam scores  
 - 🧠 **Psychological Indicators**: stress, mental health, exam anxiety  
@@ -25,106 +24,107 @@ It captures multiple factors such as:
 
 ## 🧼 Data Cleaning Summary
 
-Cleaning was performed using Microsoft Excel and involved several transformations to normalize and harmonize the data:
+Performed in Microsoft Excel and Python, data cleaning involved:
 
 | Column                        | Transformation Description                                 |
 |------------------------------|------------------------------------------------------------|
-| `social_media_hours`         | Converted from weekly total → daily average (`÷ 7`)       |
-| `netflix_hours`              | Converted from weekly total → daily average (`÷ 7`)       |
-| `exercise_frequency`         | Converted from weekly total → daily frequency (`÷ 7`)     |
-| `exam_anxiety_score`         | Converted from range 5–10 → 0–5 (ordinal)                  |
-| `gender`                     | Lowercased for consistency (`Male` → `male`)              |
-| `part_time_job`              | Encoded as binary (`Yes` → 1, `No` → 0)                   |
-| `access_to_tutoring`         | Encoded as binary (`Yes` → 1, `No` → 0)                   |
-| `attendance_percentage`      | Preserved as string (e.g., `88.4%`) to indicate percentage |
-| `*_hours` columns            | Renamed to explicitly indicate `*_per_day` or `*_average` |
+| `social_media_hours`         | Weekly → daily average (`÷ 7`)                             |
+| `netflix_hours`              | Weekly → daily average (`÷ 7`)                             |
+| `exercise_frequency`         | Weekly → daily frequency (`÷ 7`)                           |
+| `exam_anxiety_score`         | Normalized from range 5–10 → 0–5                           |
+| `gender`                     | Standardized to lowercase (`Male` → `male`)               |
+| `part_time_job`              | Encoded to binary (`Yes` → 1, `No` → 0)                   |
+| `access_to_tutoring`         | Encoded to binary (`Yes` → 1, `No` → 0)                   |
+| `attendance_percentage`      | Kept as string to reflect actual percentage format         |
+| `*_hours` columns            | Renamed for clarity (`*_per_day` / `*_average`)           |
 
-All transformations are documented in `data_cleaning_notes.md`.
+Detailed steps in: `data_cleaning_notes.md`
 
 ---
 
-## 📊 Exploratory Data Analysis (Planned)
+## 📊 Exploratory Data Analysis
 
-The cleaned dataset will be used to explore the following:
+Exploration goals included:
 
 - 📉 Correlation between habits and performance (`study_hours_per_day` vs `GPA`)
-- 🧘‍♀️ Impact of lifestyle (sleep, exercise, anxiety) on exam results
-- 📚 Influence of external support (tutoring, parental support) on academic success
-- 🧩 Demographic analysis: Does age, gender, or major influence performance?
+- 🧘‍♀️ Lifestyle impact (sleep, exercise, anxiety) on exam results
+- 📚 External support influence (tutoring, parental support) on academic success
+- 🧩 Demographics: age, gender, or major in relation to performance
 
-Visualizations will be created using Python libraries such as `matplotlib`, `seaborn`, or `plotly`.
+Visualized using `matplotlib`, `seaborn`, and `plotly`.
 
 ---
 
 ## 🤖 Modeling Objectives
 
-### 🔁 Regression Model
-- **Goal**: Predict `exam_score` or `previous_gpa` based on behavior, psychology, and lifestyle factors.
+### 🔁 Regression
+- **Target**: `exam_score`
+- **Approach**: Predict using behavioral, psychological, and lifestyle features
 
-### 🚦 Classification Model
-- **Goal**: Predict `dropout_risk` (Yes/No) based on stress, motivation, attendance, and engagement.
+### 🚦 Classification
+- **Target**: `dropout_risk` (0/1)
+- **Approach**: Predict risk of dropping out using stress, motivation, attendance
 
-Models may include:
-- Linear Regression, Random Forest Regressor
-- Logistic Regression, XGBoost Classifier, or Neural Networks
+**Models used:**
+- Linear Regression, Random Forest Regressor  
+- Logistic Regression, Random Forest Classifier
 
 ---
 
 ## 🎯 Project Goals
 
-By the end of this project, we aim to:
-
-- ✅ Build a clean, analysis-ready dataset
-- ✅ Understand key drivers of student success and risk
+- ✅ Create a clean, analysis-ready dataset  
+- ✅ Understand behavioral and psychological drivers of performance  
 - ✅ Develop machine learning models to:
-  - Predict academic performance
-  - Identify at-risk students for early intervention
-- 📈 Provide actionable insights for academic institutions or educators
+  - Predict academic scores
+  - Identify at-risk students
+- 📈 Generate actionable insights for educational institutions
 
 ---
 
 ## 📁 Repository Structure
 
-```
 📦 student-performance-project
 ├── raw_data.csv
-├── cleaned_data.csv
+├── new_cleaned_data.csv
+├── outlier_summary.csv
 ├── data_cleaning_notes.md
+├── Exploratory Data Analysis (EDA).md
+├── model_training.md
 ├── eda_notebook.ipynb
-├── model_training.ipynb
-└── README.md
-```
+├── model_training_revised.ipynb
+├── README.md
+
 
 ---
 
-## 🛠️ Tools Used
+## 🛠️ Tools & Libraries
 
 - Microsoft Excel (data cleaning)
-- Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn)
-- Jupyter Notebook
+- Python (Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn)
+- Jupyter Notebook, Google Colab
 - Git + GitHub
 
 ---
-## 📓 Notebook links
 
+## 📓 Notebook Links
 
-- 📓 [Exploratory Data Analysis Notebook](https://colab.research.google.com/drive/12_r25CkAcZLfnu8N0DvDLoy8YQ7XPwXp?usp=drive_link)
+- 📓 [Exploratory Data Analysis Notebook](https://colab.research.google.com/drive/12_r25CkAcZLfnu8N0DvDLoy8YQ7XPwXp?usp=drive_link)  
 - 🤖 [Model Training Notebook](https://drive.google.com/file/d/1SQUiXk6FLTwP9OjejNruoLQZBy-zTtS3/view?usp=sharing)
 
 ---
 
 ## 💼 Real-world Impact
 
-This type of analysis can be applied in schools and universities to:
+This project can help educational institutions to:
 
 - Detect at-risk students early
 - Allocate support resources more effectively
-- Improve academic performance through behavior-based interventions
+- Improve outcomes through behavior-informed interventions
 
 ---
 
 ## 🙋 Author
 
-This project is managed by Rayhan Ananda Resky.  
-Feel free to contribute, suggest improvements, or fork for your own research.
-
+This project is managed by **Rayhan Ananda Resky**.  
+Feel free to contribute, raise issues, or fork for your own research and learning.
